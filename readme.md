@@ -10,8 +10,8 @@ Compilation of SQL - Tableau integration projects for data analysis and data vis
 + [View my tableau public profile for the course works and more](https://public.tableau.com/profile/phonethiriyadana#!/)
 
 ## Projects
-**Integrating SQL and Tableau with Real Life Practical Examples**: data analysis and data visualizations for answering business related questions for management including,
+**SQL - MySQL for Data Analytics and Business Intelligence**: data analysis and data visualizations for answering business related questions for management including,
 + What is breakdown between the male and female employees working in the company each year, starting from 1990?
 
 ## Challenges
-**Integrating SQL and Tableau with Real Life Practical Examples** : challenges are from Skillshare course [Integrating SQL and Tableau with Real Life Practical Examples](https://www.skillshare.com/classes/Integrating-SQL-and-Tableau-with-Real-Life-Practical-Examples/816604773) which is an interesting course.
+**SQL - MySQL for Data Analytics and Business Intelligence** : challenges are from Skillshare course [SQL - MySQL for Data Analytics and Business Intelligence](https://www.udemy.com/course/sql-mysql-for-data-analytics-and-business-intelligence/) which is an interesting course.
