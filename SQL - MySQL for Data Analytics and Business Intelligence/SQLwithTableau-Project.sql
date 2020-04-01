@@ -54,3 +54,25 @@ GROUP BY d.dept_no, e.gender, calendar_year
 HAVING calendar_year <=2002
 ORDER BY d.dept_no;
 
+/*Create an SQL stored procedure that will allow you to obtain the average male and female salary per department 
+within a certain salary range. Let this range be defined by two values the user can insert when calling the procedure.
+Finally, visualize the obtained result-set in Tableau as a double bar chart.*/
+
+/*CSV Output: 04_male_vs_female_average_salary_within_specific_range.csv*/
+DROP PROCEDURE IF EXISTS getAverageSalrayMaleVsFemale;
+
+DELIMITER $$
+CREATE PROCEDURE getAverageSalrayMaleVsFemale(IN p_min_salary FLOAT, IN p_max_salary FLOAT)
+BEGIN
+	SELECT e.gender, d.dept_name, ROUND(AVG(s.salary),2) AS avg_salary
+	FROM t_employees e
+	JOIN t_dept_emp de ON de.emp_no = e.emp_no
+	JOIN t_departments d ON d.dept_no = de.dept_no
+	JOIN t_salaries s ON s.emp_no = e.emp_no
+    WHERE s.salary BETWEEN p_min_salary AND p_max_salary
+	GROUP BY d.dept_no, e.gender;
+END $$
+DELIMITER ;
+
+CALL getAverageSalrayMaleVsFemale(50000, 90000);
+

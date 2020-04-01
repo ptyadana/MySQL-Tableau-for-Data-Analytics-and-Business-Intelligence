@@ -4,13 +4,13 @@ CREATE DATABASE IF NOT EXISTS Sales;
 USE Sales;
 
 /* Create Tables */
-CREATE TABLE Customers(
-	customer_id INT AUTO_INCREMENT,
-	first_name VARCHAR(255) NOT NULL,
+CREATE TABLE Customers (
+    customer_id INT AUTO_INCREMENT,
+    first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
     email_address VARCHAR(255) NOT NULL,
     number_of_complaints INT DEFAULT 0,
-    PRIMARY KEY(customer_id),
+    PRIMARY KEY (customer_id),
     UNIQUE KEY (email_address)
 );
 
