@@ -83,3 +83,28 @@ WHERE emp_no = 111534;
 #testing for triggers finish
 ROLLBACK;
 SET autocommit = 1;
+
+/******************************************************************/
+
+/*Create a trigger that checks if the hire date of an employee is higher than the current date.
+ If true, set this date to be the current date. Format the output appropriately (YY-MM-DD).*/
+ DELIMITER $$
+ CREATE TRIGGER trig_ins_hire_date
+ BEFORE INSERT ON employees
+ FOR EACH ROW
+ BEGIN
+	IF NEW.hire_date > curdate() THEN
+		SET NEW.hire_date = curdate();
+	END IF;
+ END $$
+ DELIMITER ;
+ 
+ #testing
+ INSERT INTO employees(emp_no, birth_date,first_name,last_name,gender,hire_date)
+ VALUES('999904','1980-01-01','Johnny','English','M','2030-01-30');
+ 
+ SELECT * FROM employees
+ ORDER BY emp_no DESC
+ LIMIT 10;
+ 
+ 
