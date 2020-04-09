@@ -1,5 +1,5 @@
 # SQL - Tableau Integration Projects
-Compilation of SQL - Tableau integration projects for data analysis and data visualizations.
+Compilation of SQL - Tableau integration projects for Data Analytics, Business Intelligence and Data Visualizations.
 
 ### Database, Database Tool and Visualization Tool
 + MySQL
