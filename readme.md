@@ -6,8 +6,8 @@ Compilation of SQL - Tableau integration projects for Data Analytics, Business I
 + MySQL Workbench
 + Tableau Public
 
-### Tableau Public Visualization
-+ [View my tableau public profile for the course works and more](https://public.tableau.com/profile/phonethiriyadana#!/)
+### Live Demo
++ [view Project Details on Tableau Public](https://public.tableau.com/profile/phonethiriyadana#!/vizhome/IntegratingSQLandTableauforDataAnalyticsandBusinessIntelligence/Dashboard1)
 
 ## Projects
 **SQL - MySQL for Data Analytics and Business Intelligence**: data analysis and data visualizations for answering business related questions for management including,
